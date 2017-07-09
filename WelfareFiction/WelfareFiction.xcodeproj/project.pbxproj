@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20FDFA361F11C9070060E080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFA351F11C9070060E080 /* AppDelegate.swift */; };
+		20FDFA3B1F11C9070060E080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FDFA391F11C9070060E080 /* Main.storyboard */; };
+		20FDFA3E1F11C9070060E080 /* WelfareFiction.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFA3C1F11C9070060E080 /* WelfareFiction.xcdatamodeld */; };
+		20FDFA401F11C9070060E080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20FDFA3F1F11C9070060E080 /* Assets.xcassets */; };
+		20FDFA431F11C9070060E080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FDFA411F11C9070060E080 /* LaunchScreen.storyboard */; };
+		20FDFA811F11C9B10060E080 /* libTuringSDK-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFA661F11C9B10060E080 /* libTuringSDK-iphoneos.a */; };
+		20FDFA821F11C9B10060E080 /* libTuringSDK-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFA671F11C9B10060E080 /* libTuringSDK-simulator.a */; };
+		20FDFA831F11C9B10060E080 /* libTuringSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFA681F11C9B10060E080 /* libTuringSDK.a */; };
+		20FDFA841F11C9B10060E080 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFA6B1F11C9B10060E080 /* CADebugMacros.cpp */; };
+		20FDFA851F11C9B10060E080 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFA6E1F11C9B10060E080 /* CAStreamBasicDescription.cpp */; };
+		20FDFA861F11C9B10060E080 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFA701F11C9B10060E080 /* CAXException.cpp */; };
+		20FDFA871F11C9B10060E080 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFA741F11C9B10060E080 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		20FDFA881F11C9B10060E080 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFA771F11C9B10060E080 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		20FDFA891F11C9B10060E080 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFA7A1F11C9B10060E080 /* TTTAttributedLabel.m */; };
+		20FDFA8A1F11C9B10060E080 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFA7B1F11C9B10060E080 /* MainViewController.swift */; };
+		20FDFA9D1F11CD150060E080 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFA9C1F11CD150060E080 /* SystemConfiguration.framework */; };
+		20FDFA9F1F11CD2C0060E080 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFA9E1F11CD2C0060E080 /* Foundation.framework */; };
+		20FDFAA11F11CD330060E080 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFAA01F11CD330060E080 /* AVFoundation.framework */; };
+		20FDFAA31F11CD3D0060E080 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFAA21F11CD3D0060E080 /* GLKit.framework */; };
+		20FDFAA51F11CD460060E080 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFAA41F11CD460060E080 /* OpenGLES.framework */; };
+		20FDFAA71F11CD580060E080 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFAA61F11CD580060E080 /* libz.1.tbd */; };
+		20FDFAA91F11CD600060E080 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFAA81F11CD600060E080 /* Security.framework */; };
+		20FDFAAB1F11CD6D0060E080 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFAAA1F11CD6D0060E080 /* CFNetwork.framework */; };
+		20FDFAAD1F11CD7B0060E080 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FDFAAC1F11CD7B0060E080 /* CoreLocation.framework */; };
+		20FDFAB01F11CEE00060E080 /* API.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 20FDFAAF1F11CEE00060E080 /* API.rtf */; };
+		20FDFAF31F11DE0E0060E080 /* AlexNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFAD51F11DE0E0060E080 /* AlexNavigationController.swift */; };
+		20FDFAF41F11DE0E0060E080 /* AlexTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFAD61F11DE0E0060E080 /* AlexTabBarController.swift */; };
+		20FDFAF51F11DE0E0060E080 /* AlexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFAD71F11DE0E0060E080 /* AlexViewController.swift */; };
+		20FDFAF61F11DE0E0060E080 /* AlexBookshelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FDFADC1F11DE0E0060E080 /* AlexBookshelf.storyboard */; };
+		20FDFAFC1F11DE0E0060E080 /* AlexMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FDFAEB1F11DE0E0060E080 /* AlexMe.storyboard */; };
+		20FDFAFD1F11DE0E0060E080 /* AlexWelfare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FDFAF01F11DE0E0060E080 /* AlexWelfare.storyboard */; };
+		20FDFAFF1F11DEEB0060E080 /* AlexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFAFE1F11DEEB0060E080 /* AlexView.swift */; };
+		20FDFB041F11F8BB0060E080 /* AlexAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB031F11F8BB0060E080 /* AlexAdapter.swift */; };
+		20FDFB101F1201410060E080 /* AlexBookstore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FDFB091F1201410060E080 /* AlexBookstore.storyboard */; };
+		20FDFB111F1201410060E080 /* AlexBookstoreAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB0A1F1201410060E080 /* AlexBookstoreAdapter.swift */; };
+		20FDFB121F1201410060E080 /* AlexBookstorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB0B1F1201410060E080 /* AlexBookstorePresenter.swift */; };
+		20FDFB131F1201410060E080 /* AlexBookstoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB0C1F1201410060E080 /* AlexBookstoreView.swift */; };
+		20FDFB141F1201410060E080 /* AlexBookstoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB0D1F1201410060E080 /* AlexBookstoreViewController.swift */; };
+		20FDFB191F120FC70060E080 /* AlexWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB181F120FC70060E080 /* AlexWKWebView.swift */; };
+		20FDFB1E1F1212C40060E080 /* AlexClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB1B1F1212C40060E080 /* AlexClassificationViewController.swift */; };
+		20FDFB211F1213320060E080 /* AlexBookClassificationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB201F1213320060E080 /* AlexBookClassificationAdapter.swift */; };
+		20FDFB231F1213630060E080 /* AlexBookClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB221F1213630060E080 /* AlexBookClassificationView.swift */; };
+		20FDFB251F1218640060E080 /* AlexBookstoreNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB241F1218640060E080 /* AlexBookstoreNavigationController.swift */; };
+		FA1B6FBDD67B98E674CF3734 /* Pods_WelfareFiction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2EED8CF390D11C7CF791D6 /* Pods_WelfareFiction.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20FDFA321F11C9070060E080 /* WelfareFiction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WelfareFiction.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FDFA351F11C9070060E080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20FDFA3A1F11C9070060E080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20FDFA3D1F11C9070060E080 /* WelfareFiction.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WelfareFiction.xcdatamodel; sourceTree = "<group>"; };
+		20FDFA3F1F11C9070060E080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20FDFA421F11C9070060E080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20FDFA441F11C9070060E080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20FDFA5B1F11C9B10060E080 /* Alex-Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Alex-Bridge-Header.h"; sourceTree = "<group>"; };
+		20FDFA5F1F11C9B10060E080 /* BDVoiceRecognitionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVoiceRecognitionClient.h; sourceTree = "<group>"; };
+		20FDFA601F11C9B10060E080 /* TRRSpeechSythesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRSpeechSythesizer.h; sourceTree = "<group>"; };
+		20FDFA611F11C9B10060E080 /* TRRTuringAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRTuringAPI.h; sourceTree = "<group>"; };
+		20FDFA621F11C9B10060E080 /* TRRTuringAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRTuringAPIConfig.h; sourceTree = "<group>"; };
+		20FDFA631F11C9B10060E080 /* TRRTuringRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRTuringRequestManager.h; sourceTree = "<group>"; };
+		20FDFA641F11C9B10060E080 /* TRRVoiceRecognitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRVoiceRecognitionManager.h; sourceTree = "<group>"; };
+		20FDFA661F11C9B10060E080 /* libTuringSDK-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libTuringSDK-iphoneos.a"; sourceTree = "<group>"; };
+		20FDFA671F11C9B10060E080 /* libTuringSDK-simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libTuringSDK-simulator.a"; sourceTree = "<group>"; };
+		20FDFA681F11C9B10060E080 /* libTuringSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTuringSDK.a; sourceTree = "<group>"; };
+		20FDFA6B1F11C9B10060E080 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		20FDFA6C1F11C9B10060E080 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		20FDFA6D1F11C9B10060E080 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		20FDFA6E1F11C9B10060E080 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		20FDFA6F1F11C9B10060E080 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		20FDFA701F11C9B10060E080 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		20FDFA711F11C9B10060E080 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		20FDFA731F11C9B10060E080 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		20FDFA741F11C9B10060E080 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		20FDFA761F11C9B10060E080 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		20FDFA771F11C9B10060E080 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		20FDFA791F11C9B10060E080 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		20FDFA7A1F11C9B10060E080 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		20FDFA7B1F11C9B10060E080 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		20FDFA9C1F11CD150060E080 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		20FDFA9E1F11CD2C0060E080 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20FDFAA01F11CD330060E080 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		20FDFAA21F11CD3D0060E080 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		20FDFAA41F11CD460060E080 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		20FDFAA61F11CD580060E080 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		20FDFAA81F11CD600060E080 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		20FDFAAA1F11CD6D0060E080 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		20FDFAAC1F11CD7B0060E080 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		20FDFAAF1F11CEE00060E080 /* API.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = API.rtf; sourceTree = "<group>"; };
+		20FDFAD51F11DE0E0060E080 /* AlexNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexNavigationController.swift; sourceTree = "<group>"; };
+		20FDFAD61F11DE0E0060E080 /* AlexTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexTabBarController.swift; sourceTree = "<group>"; };
+		20FDFAD71F11DE0E0060E080 /* AlexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexViewController.swift; sourceTree = "<group>"; };
+		20FDFADC1F11DE0E0060E080 /* AlexBookshelf.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlexBookshelf.storyboard; sourceTree = "<group>"; };
+		20FDFAEB1F11DE0E0060E080 /* AlexMe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlexMe.storyboard; sourceTree = "<group>"; };
+		20FDFAF01F11DE0E0060E080 /* AlexWelfare.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlexWelfare.storyboard; sourceTree = "<group>"; };
+		20FDFAFE1F11DEEB0060E080 /* AlexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexView.swift; sourceTree = "<group>"; };
+		20FDFB031F11F8BB0060E080 /* AlexAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexAdapter.swift; sourceTree = "<group>"; };
+		20FDFB091F1201410060E080 /* AlexBookstore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlexBookstore.storyboard; sourceTree = "<group>"; };
+		20FDFB0A1F1201410060E080 /* AlexBookstoreAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookstoreAdapter.swift; sourceTree = "<group>"; };
+		20FDFB0B1F1201410060E080 /* AlexBookstorePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookstorePresenter.swift; sourceTree = "<group>"; };
+		20FDFB0C1F1201410060E080 /* AlexBookstoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookstoreView.swift; sourceTree = "<group>"; };
+		20FDFB0D1F1201410060E080 /* AlexBookstoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookstoreViewController.swift; sourceTree = "<group>"; };
+		20FDFB181F120FC70060E080 /* AlexWKWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexWKWebView.swift; sourceTree = "<group>"; };
+		20FDFB1B1F1212C40060E080 /* AlexClassificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexClassificationViewController.swift; sourceTree = "<group>"; };
+		20FDFB201F1213320060E080 /* AlexBookClassificationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookClassificationAdapter.swift; sourceTree = "<group>"; };
+		20FDFB221F1213630060E080 /* AlexBookClassificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookClassificationView.swift; sourceTree = "<group>"; };
+		20FDFB241F1218640060E080 /* AlexBookstoreNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookstoreNavigationController.swift; sourceTree = "<group>"; };
+		4A31B59E940A7C2430D3366E /* Pods-WelfareFiction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelfareFiction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WelfareFiction/Pods-WelfareFiction.debug.xcconfig"; sourceTree = "<group>"; };
+		73D2932E0E707E7BE58264DA /* Pods-WelfareFiction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelfareFiction.release.xcconfig"; path = "Pods/Target Support Files/Pods-WelfareFiction/Pods-WelfareFiction.release.xcconfig"; sourceTree = "<group>"; };
+		FD2EED8CF390D11C7CF791D6 /* Pods_WelfareFiction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WelfareFiction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20FDFA2F1F11C9070060E080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FDFAAD1F11CD7B0060E080 /* CoreLocation.framework in Frameworks */,
+				20FDFAAB1F11CD6D0060E080 /* CFNetwork.framework in Frameworks */,
+				20FDFAA91F11CD600060E080 /* Security.framework in Frameworks */,
+				20FDFAA71F11CD580060E080 /* libz.1.tbd in Frameworks */,
+				20FDFAA51F11CD460060E080 /* OpenGLES.framework in Frameworks */,
+				20FDFAA31F11CD3D0060E080 /* GLKit.framework in Frameworks */,
+				20FDFAA11F11CD330060E080 /* AVFoundation.framework in Frameworks */,
+				20FDFA9F1F11CD2C0060E080 /* Foundation.framework in Frameworks */,
+				20FDFA9D1F11CD150060E080 /* SystemConfiguration.framework in Frameworks */,
+				20FDFA811F11C9B10060E080 /* libTuringSDK-iphoneos.a in Frameworks */,
+				FA1B6FBDD67B98E674CF3734 /* Pods_WelfareFiction.framework in Frameworks */,
+				20FDFA821F11C9B10060E080 /* libTuringSDK-simulator.a in Frameworks */,
+				20FDFA831F11C9B10060E080 /* libTuringSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20FDFA291F11C9070060E080 = {
+			isa = PBXGroup;
+			children = (
+				20FDFA341F11C9070060E080 /* WelfareFiction */,
+				20FDFA331F11C9070060E080 /* Products */,
+				39720287DF379B71F3187E55 /* Pods */,
+				A20A8AF934A6692E1D58D043 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20FDFA331F11C9070060E080 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA321F11C9070060E080 /* WelfareFiction.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20FDFA341F11C9070060E080 /* WelfareFiction */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFB061F11FDCB0060E080 /* Main */,
+				20FDFAD11F11DE0E0060E080 /* Application */,
+				20FDFAAE1F11CEC00060E080 /* HelpDocumentation */,
+				20FDFA5A1F11C9B10060E080 /* Header */,
+				20FDFA5C1F11C9B10060E080 /* Library */,
+			);
+			path = WelfareFiction;
+			sourceTree = "<group>";
+		};
+		20FDFA5A1F11C9B10060E080 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA5B1F11C9B10060E080 /* Alex-Bridge-Header.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		20FDFA5C1F11C9B10060E080 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA5D1F11C9B10060E080 /* AI */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		20FDFA5D1F11C9B10060E080 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA5E1F11C9B10060E080 /* Header */,
+				20FDFA651F11C9B10060E080 /* Libs */,
+				20FDFA691F11C9B10060E080 /* ThirdPart */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		20FDFA5E1F11C9B10060E080 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA5F1F11C9B10060E080 /* BDVoiceRecognitionClient.h */,
+				20FDFA601F11C9B10060E080 /* TRRSpeechSythesizer.h */,
+				20FDFA611F11C9B10060E080 /* TRRTuringAPI.h */,
+				20FDFA621F11C9B10060E080 /* TRRTuringAPIConfig.h */,
+				20FDFA631F11C9B10060E080 /* TRRTuringRequestManager.h */,
+				20FDFA641F11C9B10060E080 /* TRRVoiceRecognitionManager.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		20FDFA651F11C9B10060E080 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA661F11C9B10060E080 /* libTuringSDK-iphoneos.a */,
+				20FDFA671F11C9B10060E080 /* libTuringSDK-simulator.a */,
+				20FDFA681F11C9B10060E080 /* libTuringSDK.a */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		20FDFA691F11C9B10060E080 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA6A1F11C9B10060E080 /* CoreAudioUtility */,
+				20FDFA721F11C9B10060E080 /* JSONKit-master */,
+				20FDFA751F11C9B10060E080 /* OpenUDID */,
+				20FDFA781F11C9B10060E080 /* TTTAttributedLabel */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		20FDFA6A1F11C9B10060E080 /* CoreAudioUtility */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA6B1F11C9B10060E080 /* CADebugMacros.cpp */,
+				20FDFA6C1F11C9B10060E080 /* CADebugMacros.h */,
+				20FDFA6D1F11C9B10060E080 /* CAMath.h */,
+				20FDFA6E1F11C9B10060E080 /* CAStreamBasicDescription.cpp */,
+				20FDFA6F1F11C9B10060E080 /* CAStreamBasicDescription.h */,
+				20FDFA701F11C9B10060E080 /* CAXException.cpp */,
+				20FDFA711F11C9B10060E080 /* CAXException.h */,
+			);
+			path = CoreAudioUtility;
+			sourceTree = "<group>";
+		};
+		20FDFA721F11C9B10060E080 /* JSONKit-master */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA731F11C9B10060E080 /* JSONKit.h */,
+				20FDFA741F11C9B10060E080 /* JSONKit.m */,
+			);
+			path = "JSONKit-master";
+			sourceTree = "<group>";
+		};
+		20FDFA751F11C9B10060E080 /* OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA761F11C9B10060E080 /* OpenUDID.h */,
+				20FDFA771F11C9B10060E080 /* OpenUDID.m */,
+			);
+			path = OpenUDID;
+			sourceTree = "<group>";
+		};
+		20FDFA781F11C9B10060E080 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA791F11C9B10060E080 /* TTTAttributedLabel.h */,
+				20FDFA7A1F11C9B10060E080 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		20FDFAAE1F11CEC00060E080 /* HelpDocumentation */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAAF1F11CEE00060E080 /* API.rtf */,
+			);
+			path = HelpDocumentation;
+			sourceTree = "<group>";
+		};
+		20FDFAD11F11DE0E0060E080 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAD21F11DE0E0060E080 /* Base */,
+				20FDFADA1F11DE0E0060E080 /* Bookshelf */,
+				20FDFADF1F11DE0E0060E080 /* Bookstore */,
+				20FDFAEE1F11DE0E0060E080 /* Welfare */,
+				20FDFAE91F11DE0E0060E080 /* Me */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		20FDFAD21F11DE0E0060E080 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAD31F11DE0E0060E080 /* Class */,
+				20FDFAD41F11DE0E0060E080 /* Controller */,
+				20FDFAD81F11DE0E0060E080 /* Model */,
+				20FDFAD91F11DE0E0060E080 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		20FDFAD31F11DE0E0060E080 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFB031F11F8BB0060E080 /* AlexAdapter.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		20FDFAD41F11DE0E0060E080 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAD51F11DE0E0060E080 /* AlexNavigationController.swift */,
+				20FDFAD61F11DE0E0060E080 /* AlexTabBarController.swift */,
+				20FDFAD71F11DE0E0060E080 /* AlexViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20FDFAD81F11DE0E0060E080 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20FDFAD91F11DE0E0060E080 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAFE1F11DEEB0060E080 /* AlexView.swift */,
+				20FDFB181F120FC70060E080 /* AlexWKWebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20FDFADA1F11DE0E0060E080 /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFADB1F11DE0E0060E080 /* Controller */,
+				20FDFADD1F11DE0E0060E080 /* Model */,
+				20FDFADE1F11DE0E0060E080 /* View */,
+			);
+			path = Bookshelf;
+			sourceTree = "<group>";
+		};
+		20FDFADB1F11DE0E0060E080 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFADC1F11DE0E0060E080 /* AlexBookshelf.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20FDFADD1F11DE0E0060E080 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20FDFADE1F11DE0E0060E080 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20FDFADF1F11DE0E0060E080 /* Bookstore */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFB091F1201410060E080 /* AlexBookstore.storyboard */,
+				20FDFB241F1218640060E080 /* AlexBookstoreNavigationController.swift */,
+				20FDFB0D1F1201410060E080 /* AlexBookstoreViewController.swift */,
+				20FDFB0C1F1201410060E080 /* AlexBookstoreView.swift */,
+				20FDFB0A1F1201410060E080 /* AlexBookstoreAdapter.swift */,
+				20FDFB0B1F1201410060E080 /* AlexBookstorePresenter.swift */,
+				20FDFB0E1F1201410060E080 /* BookClassification */,
+			);
+			path = Bookstore;
+			sourceTree = "<group>";
+		};
+		20FDFAE91F11DE0E0060E080 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAEA1F11DE0E0060E080 /* Controller */,
+				20FDFAEC1F11DE0E0060E080 /* Model */,
+				20FDFAED1F11DE0E0060E080 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		20FDFAEA1F11DE0E0060E080 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAEB1F11DE0E0060E080 /* AlexMe.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20FDFAEC1F11DE0E0060E080 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20FDFAED1F11DE0E0060E080 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20FDFAEE1F11DE0E0060E080 /* Welfare */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAEF1F11DE0E0060E080 /* Controller */,
+				20FDFAF11F11DE0E0060E080 /* Model */,
+				20FDFAF21F11DE0E0060E080 /* View */,
+			);
+			path = Welfare;
+			sourceTree = "<group>";
+		};
+		20FDFAEF1F11DE0E0060E080 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAF01F11DE0E0060E080 /* AlexWelfare.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20FDFAF11F11DE0E0060E080 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20FDFAF21F11DE0E0060E080 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20FDFB061F11FDCB0060E080 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFA7B1F11C9B10060E080 /* MainViewController.swift */,
+				20FDFA351F11C9070060E080 /* AppDelegate.swift */,
+				20FDFA391F11C9070060E080 /* Main.storyboard */,
+				20FDFA3F1F11C9070060E080 /* Assets.xcassets */,
+				20FDFA411F11C9070060E080 /* LaunchScreen.storyboard */,
+				20FDFA441F11C9070060E080 /* Info.plist */,
+				20FDFA3C1F11C9070060E080 /* WelfareFiction.xcdatamodeld */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		20FDFB0E1F1201410060E080 /* BookClassification */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFB1A1F1212C40060E080 /* Controller */,
+				20FDFB1C1F1212C40060E080 /* Model */,
+				20FDFB1D1F1212C40060E080 /* View */,
+				20FDFB1F1F1213010060E080 /* Adapter */,
+			);
+			path = BookClassification;
+			sourceTree = "<group>";
+		};
+		20FDFB1A1F1212C40060E080 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFB1B1F1212C40060E080 /* AlexClassificationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20FDFB1C1F1212C40060E080 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20FDFB1D1F1212C40060E080 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFB221F1213630060E080 /* AlexBookClassificationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20FDFB1F1F1213010060E080 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFB201F1213320060E080 /* AlexBookClassificationAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		39720287DF379B71F3187E55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A31B59E940A7C2430D3366E /* Pods-WelfareFiction.debug.xcconfig */,
+				73D2932E0E707E7BE58264DA /* Pods-WelfareFiction.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A20A8AF934A6692E1D58D043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20FDFAAC1F11CD7B0060E080 /* CoreLocation.framework */,
+				20FDFAAA1F11CD6D0060E080 /* CFNetwork.framework */,
+				20FDFAA81F11CD600060E080 /* Security.framework */,
+				20FDFAA61F11CD580060E080 /* libz.1.tbd */,
+				20FDFAA41F11CD460060E080 /* OpenGLES.framework */,
+				20FDFAA21F11CD3D0060E080 /* GLKit.framework */,
+				20FDFAA01F11CD330060E080 /* AVFoundation.framework */,
+				20FDFA9E1F11CD2C0060E080 /* Foundation.framework */,
+				20FDFA9C1F11CD150060E080 /* SystemConfiguration.framework */,
+				FD2EED8CF390D11C7CF791D6 /* Pods_WelfareFiction.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20FDFA311F11C9070060E080 /* WelfareFiction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20FDFA471F11C9070060E080 /* Build configuration list for PBXNativeTarget "WelfareFiction" */;
+			buildPhases = (
+				1069E13ED8324EC94F74AF6D /* [CP] Check Pods Manifest.lock */,
+				20FDFA2E1F11C9070060E080 /* Sources */,
+				20FDFA2F1F11C9070060E080 /* Frameworks */,
+				20FDFA301F11C9070060E080 /* Resources */,
+				98A4A97C7222632462404AD0 /* [CP] Embed Pods Frameworks */,
+				1E7CFB944F5B7A078D6B3A68 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WelfareFiction;
+			productName = WelfareFiction;
+			productReference = 20FDFA321F11C9070060E080 /* WelfareFiction.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20FDFA2A1F11C9070060E080 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					20FDFA311F11C9070060E080 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 20FDFA2D1F11C9070060E080 /* Build configuration list for PBXProject "WelfareFiction" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20FDFA291F11C9070060E080;
+			productRefGroup = 20FDFA331F11C9070060E080 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20FDFA311F11C9070060E080 /* WelfareFiction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20FDFA301F11C9070060E080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FDFAB01F11CEE00060E080 /* API.rtf in Resources */,
+				20FDFB101F1201410060E080 /* AlexBookstore.storyboard in Resources */,
+				20FDFAF61F11DE0E0060E080 /* AlexBookshelf.storyboard in Resources */,
+				20FDFAFC1F11DE0E0060E080 /* AlexMe.storyboard in Resources */,
+				20FDFA431F11C9070060E080 /* LaunchScreen.storyboard in Resources */,
+				20FDFAFD1F11DE0E0060E080 /* AlexWelfare.storyboard in Resources */,
+				20FDFA401F11C9070060E080 /* Assets.xcassets in Resources */,
+				20FDFA3B1F11C9070060E080 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1069E13ED8324EC94F74AF6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E7CFB944F5B7A078D6B3A68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WelfareFiction/Pods-WelfareFiction-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A4A97C7222632462404AD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WelfareFiction/Pods-WelfareFiction-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20FDFA2E1F11C9070060E080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FDFB131F1201410060E080 /* AlexBookstoreView.swift in Sources */,
+				20FDFB211F1213320060E080 /* AlexBookClassificationAdapter.swift in Sources */,
+				20FDFB041F11F8BB0060E080 /* AlexAdapter.swift in Sources */,
+				20FDFB121F1201410060E080 /* AlexBookstorePresenter.swift in Sources */,
+				20FDFA861F11C9B10060E080 /* CAXException.cpp in Sources */,
+				20FDFA3E1F11C9070060E080 /* WelfareFiction.xcdatamodeld in Sources */,
+				20FDFA871F11C9B10060E080 /* JSONKit.m in Sources */,
+				20FDFAF31F11DE0E0060E080 /* AlexNavigationController.swift in Sources */,
+				20FDFAFF1F11DEEB0060E080 /* AlexView.swift in Sources */,
+				20FDFA891F11C9B10060E080 /* TTTAttributedLabel.m in Sources */,
+				20FDFB231F1213630060E080 /* AlexBookClassificationView.swift in Sources */,
+				20FDFB141F1201410060E080 /* AlexBookstoreViewController.swift in Sources */,
+				20FDFA881F11C9B10060E080 /* OpenUDID.m in Sources */,
+				20FDFAF41F11DE0E0060E080 /* AlexTabBarController.swift in Sources */,
+				20FDFA841F11C9B10060E080 /* CADebugMacros.cpp in Sources */,
+				20FDFAF51F11DE0E0060E080 /* AlexViewController.swift in Sources */,
+				20FDFB251F1218640060E080 /* AlexBookstoreNavigationController.swift in Sources */,
+				20FDFB1E1F1212C40060E080 /* AlexClassificationViewController.swift in Sources */,
+				20FDFB111F1201410060E080 /* AlexBookstoreAdapter.swift in Sources */,
+				20FDFA8A1F11C9B10060E080 /* MainViewController.swift in Sources */,
+				20FDFA361F11C9070060E080 /* AppDelegate.swift in Sources */,
+				20FDFA851F11C9B10060E080 /* CAStreamBasicDescription.cpp in Sources */,
+				20FDFB191F120FC70060E080 /* AlexWKWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20FDFA391F11C9070060E080 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20FDFA3A1F11C9070060E080 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20FDFA411F11C9070060E080 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20FDFA421F11C9070060E080 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20FDFA451F11C9070060E080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20FDFA461F11C9070060E080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20FDFA481F11C9070060E080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A31B59E940A7C2430D3366E /* Pods-WelfareFiction.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WelfareFiction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WelfareFiction/Library/AI/Libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alex-Yang.WelfareFiction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WelfareFiction/Header/Alex-Bridge-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Debug;
+		};
+		20FDFA491F11C9070060E080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D2932E0E707E7BE58264DA /* Pods-WelfareFiction.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WelfareFiction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WelfareFiction/Library/AI/Libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alex-Yang.WelfareFiction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WelfareFiction/Header/Alex-Bridge-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20FDFA2D1F11C9070060E080 /* Build configuration list for PBXProject "WelfareFiction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FDFA451F11C9070060E080 /* Debug */,
+				20FDFA461F11C9070060E080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20FDFA471F11C9070060E080 /* Build configuration list for PBXNativeTarget "WelfareFiction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FDFA481F11C9070060E080 /* Debug */,
+				20FDFA491F11C9070060E080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20FDFA3C1F11C9070060E080 /* WelfareFiction.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20FDFA3D1F11C9070060E080 /* WelfareFiction.xcdatamodel */,
+			);
+			currentVersion = 20FDFA3D1F11C9070060E080 /* WelfareFiction.xcdatamodel */;
+			path = WelfareFiction.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 20FDFA2A1F11C9070060E080 /* Project object */;
+}
