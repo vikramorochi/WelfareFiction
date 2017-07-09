@@ -12,11 +12,6 @@ class AlexBookstoreView: AlexView {
 
     private var tableView:UITableView = UITableView()
     
-    
-    
-    
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
         
@@ -24,6 +19,7 @@ class AlexBookstoreView: AlexView {
         
         tableView.frame = self.bounds
         tableView.backgroundColor = UIColor.red
+        tableView.register(UINib.init(nibName: "AlexTableViewCell", bundle: nil), forCellReuseIdentifier: "bookstoreCell")
         self.addSubview(tableView)
     }
     

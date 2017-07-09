@@ -31,6 +31,7 @@ class AlexClassificationViewController: AlexViewController,AlexAdapterWebViewDel
 
     override func loadView() {
         super.loadView()
+        alexBookClassificationView.url = "http://city.kingreader.com/home/choice?ak=tkr_ios&lw=ul&ism=1&sc=&msc=&vsn=2006003&tk=vkMcze6Mh96VHfBBDbfgIh5VKazqtROerFYbKT4xGJIKEoCj2f3QpRxdB7Ioza3mqWRgCq32od4%3D&isft=0&apptype=5&cid=506&ishp=0&channelid=506"
         self.view = alexBookClassificationView
     }
     

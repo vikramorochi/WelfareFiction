@@ -50,6 +50,8 @@
 		20FDFB211F1213320060E080 /* AlexBookClassificationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB201F1213320060E080 /* AlexBookClassificationAdapter.swift */; };
 		20FDFB231F1213630060E080 /* AlexBookClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB221F1213630060E080 /* AlexBookClassificationView.swift */; };
 		20FDFB251F1218640060E080 /* AlexBookstoreNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB241F1218640060E080 /* AlexBookstoreNavigationController.swift */; };
+		20FDFB281F1224E90060E080 /* AlexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDFB261F1224E90060E080 /* AlexTableViewCell.swift */; };
+		20FDFB291F1224E90060E080 /* AlexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20FDFB271F1224E90060E080 /* AlexTableViewCell.xib */; };
 		FA1B6FBDD67B98E674CF3734 /* Pods_WelfareFiction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2EED8CF390D11C7CF791D6 /* Pods_WelfareFiction.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +115,8 @@
 		20FDFB201F1213320060E080 /* AlexBookClassificationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookClassificationAdapter.swift; sourceTree = "<group>"; };
 		20FDFB221F1213630060E080 /* AlexBookClassificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookClassificationView.swift; sourceTree = "<group>"; };
 		20FDFB241F1218640060E080 /* AlexBookstoreNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexBookstoreNavigationController.swift; sourceTree = "<group>"; };
+		20FDFB261F1224E90060E080 /* AlexTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexTableViewCell.swift; sourceTree = "<group>"; };
+		20FDFB271F1224E90060E080 /* AlexTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlexTableViewCell.xib; sourceTree = "<group>"; };
 		4A31B59E940A7C2430D3366E /* Pods-WelfareFiction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelfareFiction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WelfareFiction/Pods-WelfareFiction.debug.xcconfig"; sourceTree = "<group>"; };
 		73D2932E0E707E7BE58264DA /* Pods-WelfareFiction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WelfareFiction.release.xcconfig"; path = "Pods/Target Support Files/Pods-WelfareFiction/Pods-WelfareFiction.release.xcconfig"; sourceTree = "<group>"; };
 		FD2EED8CF390D11C7CF791D6 /* Pods_WelfareFiction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WelfareFiction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -379,6 +383,8 @@
 				20FDFB0C1F1201410060E080 /* AlexBookstoreView.swift */,
 				20FDFB0A1F1201410060E080 /* AlexBookstoreAdapter.swift */,
 				20FDFB0B1F1201410060E080 /* AlexBookstorePresenter.swift */,
+				20FDFB261F1224E90060E080 /* AlexTableViewCell.swift */,
+				20FDFB271F1224E90060E080 /* AlexTableViewCell.xib */,
 				20FDFB0E1F1201410060E080 /* BookClassification */,
 			);
 			path = Bookstore;
@@ -565,6 +571,7 @@
 				TargetAttributes = {
 					20FDFA311F11C9070060E080 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 29D66RTZDN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -594,6 +601,7 @@
 			files = (
 				20FDFAB01F11CEE00060E080 /* API.rtf in Resources */,
 				20FDFB101F1201410060E080 /* AlexBookstore.storyboard in Resources */,
+				20FDFB291F1224E90060E080 /* AlexTableViewCell.xib in Resources */,
 				20FDFAF61F11DE0E0060E080 /* AlexBookshelf.storyboard in Resources */,
 				20FDFAFC1F11DE0E0060E080 /* AlexMe.storyboard in Resources */,
 				20FDFA431F11C9070060E080 /* LaunchScreen.storyboard in Resources */,
@@ -665,6 +673,7 @@
 				20FDFA861F11C9B10060E080 /* CAXException.cpp in Sources */,
 				20FDFA3E1F11C9070060E080 /* WelfareFiction.xcdatamodeld in Sources */,
 				20FDFA871F11C9B10060E080 /* JSONKit.m in Sources */,
+				20FDFB281F1224E90060E080 /* AlexTableViewCell.swift in Sources */,
 				20FDFAF31F11DE0E0060E080 /* AlexNavigationController.swift in Sources */,
 				20FDFAFF1F11DEEB0060E080 /* AlexView.swift in Sources */,
 				20FDFA891F11C9B10060E080 /* TTTAttributedLabel.m in Sources */,
@@ -806,15 +815,17 @@
 			baseConfigurationReference = 4A31B59E940A7C2430D3366E /* Pods-WelfareFiction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 29D66RTZDN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WelfareFiction/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WelfareFiction/Library/AI/Libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Alex-Yang.WelfareFiction";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex_Yang/WelfareFiction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WelfareFiction/Header/Alex-Bridge-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -827,15 +838,17 @@
 			baseConfigurationReference = 73D2932E0E707E7BE58264DA /* Pods-WelfareFiction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 29D66RTZDN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WelfareFiction/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WelfareFiction/Library/AI/Libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Alex-Yang.WelfareFiction";
+				PRODUCT_BUNDLE_IDENTIFIER = Alex_Yang/WelfareFiction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WelfareFiction/Header/Alex-Bridge-Header.h";
 				SWIFT_VERSION = 3.0;

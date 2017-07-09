@@ -12,7 +12,8 @@ class AlexBookClassificationView: AlexWKWebView {
     
     
     override func draw(_ rect: CGRect) {
-         super.draw(rect)
+        super.draw(rect)
+        self.backgroundColor = UIColor.red
     }
  
 
